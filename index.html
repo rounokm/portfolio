@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- start head-->
+		<!-- How the head of a page is -->
+		<meta charset= "UTF-8">
+		<link rel="stylesheet" href="RM_MyFromatting.css">
+		<!--The title at the top of the tab -->
+
+		<style>
+
+			html{
+				margin-top:3%;
+				background-color: OldLace !Important;
+				background-image: url(./images/pic.png);
+				background-position: left top, left bottom;
+				background-size: 15% 100%;
+				background-repeat: no-repeat;
+			}
+			/* Gives the page a certain color and specific characteristics */
+
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin-left:15%
+			}
+			/* Solid lines on tables */
+
+			th {
+				font-size: 22px;
+				color: #9BC2CF;
+			}
+			/* Changes color and font size for table headings */
+
+			.des{
+				color: #cc4060;
+			}
+			/* Changes color for those with a class of des*/
+
+			p {
+			  animation-duration: 2s;
+			  animation-name: slidein;
+			}
+
+			@keyframes slidein {
+			  from {
+				margin-left: 100%;
+				width: 100%;
+			  }
+
+			  to {
+				margin-left: 0%;
+				width: 100%;
+			  }
+			}
+			/* Gives an animation for paragraphs */
+
+			h1{
+				text-align:center;
+				font-size: 43px;
+				color: LightSalmon;
+				animation-duration: 2s;
+				animation-name: slidein;
+			}
+			/* Centers text, gives a specific font-size and color, and a specific */
+
+			.pic{
+				color: #663266;
+				font-size: 14px;
+				font-family: Verdana;
+			}
+			/*Gives a certain color, font-size, and font-family to a class of pic */
+
+			a:link {
+				color: #7A8B8B;
+			}
+
+			a:visited {
+			color: #50729F;
+			}
+
+			a:hover {
+			color: #84DCCF;
+			}
+
+			a:active {
+			color: red;
+			}
+
+			/* Use :link, :visited, :hover, and :active pseudo-classes to modify
+			presentation of your links */
+
+			#change{
+				opacity: 0.7;
+				filter: alpha(opacity=50);
+			}
+			/* Changes the opacity of those with an id of change */
+
+			#change:hover{
+				opacity: 1.0;
+				filter: alpha(opacity=100);
+			}
+			/* Changes the opacity of those with an id of change when mouse is hovering over it*/
+
+
+			#ver {
+				margin-top: 15%;
+				list-style-type: none;
+				padding: 0;
+				width: 150px;
+				length:200px;
+				background-color: #f1f1f1;
+				text-align:center;
+			}
+			/* Helps with the vertical navigation bar */
+
+			.help {
+				display: block;
+				color: #000;
+				padding: 8px 16px;
+				text-decoration: none;
+			/* Helps with the vertical navigational bar */
+			}
+		</style>
+		<title> My Hobbies </title>
+	</head>
+
+	<body>
+		<ul>
+			<li><a href="RM_MyIntroduction.html#Introduction">Introduction</a></li>
+			<li style="background-color: white;"><a href="RM_Hobbies.html#hobbies">Hobbies</a></li>
+			<li><a href="RM_MyCities.html#FavCities">Favorite Cities</a></li>
+			<li><a href="RM_ToDoList.html#SGoals">To Do List</a></li>
+		</ul>
+		<!--Horizontal navigational bars with links to the pages -->
+
+		<ul id="ver">
+			<li><a href="#reading" class="help">Reading</a></li>
+			<li><a href="#fun" class="help">Memes</a></li>
+			<li><a href="#future" class="help">My Future</a></li>
+			<li><a href="#meow" class="help">Cats AKA MY LOVE</a></li>
+			<li><a href="#health" class="help">Health</a></li>
+		</ul>
+		<!-- ordered list as navigation bar and current page is denoted through a white background color-->
+		<h1 id="hobbies"> My Hobbies </h1>
+		<table style="width:80%">
+		<!-- sets table width to 80%-->
+		  <tr>
+			<!-- Describes the 3 headers-->
+			<th> Description</th>
+			<th> Pictures </th>
+			<th colspan = "2"> Relevant </th>
+		  </tr>
+
+
+		  <tr>
+			<!--First row-->
+			<td rowspan = "2">
+			<!--expands the box-->
+			<h1 id="reading">  <em> Reading </em></h1>
+			<center>
+			<a href = "RM_MyIntroduction.html#hobby"> <i>My Introduction page </i></a>			<!--  link to the book section of the introductory page  -->
+			</center>
+			<br>
+			<br>
+			<p class="des">
+			<!--Description with a class-->
+			I love to read both nonfiction and fiction because I like to see different perspectives and learn something new.
+			Some of my favorite books are The Hunger Games by Suzzane Collins, To Kill A Mockingbird by Harper Lee, and the Shadow Falls series by
+			C.C. Hunter. In the non-fiction section one of my favorite books is Anne Frank's Diary because it shows human hardship and it gives a
+			peek in to the lives of some people in other times periods. I loved reading about mythology (ie Egyptian, Greek, Roman, etc) as a child
+			because the stories of the gods always intrigued me. As I grew older I started reading about investing and running a business because I
+			want to open by own internaional corporation. I also read the autobiographies on successful people because I can learn about their hardships and why
+			they were motivated to overcome it. More importantly, I can learn some lessons from their mistakes so I know what to do if I was ever in that
+			situation. It soulds like I read alot of nonfiction books, but I mostly spend my time of fiction. Since I rarely have time I have to read
+			online books on Wattpad (I love this app, but please don't ever read anything on here).
+			</p>
+			</td>
+
+			<td rowspan = "2"> 	 <img src="./images/CCHunter.jpg" alt="Some of CC Hunter's books" height="325px" width="250px" align="right">
+			<p class="pic">
+			<!--Picture description with a class-->
+			These are some books from the Shadow Falls Series by C.C. Hunter. The storyline is about a teenage girl, Kylie, who gets sent to a
+			summer campe "for troubled teens". Her parents are going through a divorce and she's not that happy to go. The only reason why she's
+			going is because her therapist is sending her to the camp. When she arrives she discovers that the teens are not normal-- they're paranormal.
+			Later on she realizes that she doesn't fit in to a specific group. She's neither werewolf, vampire, shapeshifter, or witch. With a serial
+			killer, messed up ghosts, fighting roomates, and the government trying to run tests on her she decides to run. Only to realize her fahter is
+			not her father and that everything she knew is a lie. It's an amzing book series; the character depth is so complete and the storyline
+			is never boring.
+			</p>
+			</td>
+
+			<td colspan = "2">
+			<!--Divides the box-->
+			<p style="color: #421C52  !Important ; font-size: 13px;" >
+			<!--Related things with a class-->
+			I loved reading so much that in middle school I was in 2 bookclubs and I ran my own book blog with my friend! It's still running though
+			none of us actually write anything on the website. Basically, we would get Arcs which were basically free books in exchange for honest reviews.
+			We'd have a deadline to complete the review and some of our reviews actually made it onto ACTUAL REAL LIFE BOOKS!
+			</p>
+			</td>
+		  </tr>
+
+		  <tr>
+			<!--Second row of the table thats not seen on the table since the cell has been splitted-->
+			<!--Related things second box-->
+			<td colspan = "2">
+			<p>Sometimes our reviews would be next to the reviews of some major critics ie LA Times or New York Times!!!! I loved it so much it's such a shame I don't have time for it anymore. </p>
+			</td>
+			</tr>
+
+		  <tr>
+			<!--Second row of table -->
+			<td rowspan = "2">
+			<h1 id="fun"> <em>Memes </em> </h1>
+			<p class= "des">
+			<!--Description with a class-->
+			The internet is a playground for memes. The simplest definition for memes is a picture with words attached. They make fun of everything
+			and everyone. Most are funny because they're too relatable. I love reading memes because they're the comedic relief in my life (next to my grades).
+			They're also the highlight of my day. If I could I would spend my entire day on the internet looking at memes, but sadly I can't. So that one
+			hour break after school is dedicate to meming. Seriously, it is the highlight of my day. I respect those who create quality memes becuase it takes a genious to create a meme that mostly everyone can find funny. In fact, the entire internet hails them as heroes. Sadly, I can't create anything.
+			I am a commoner.
+			</p>
+			</td>
+
+			<td rowspan = "2"><img src="./images/meme.jpg" alt="Relatable meme" height="325px" width="250px" align="left"> <p class="pic"> You know this moment.
+			We all do. This doesn't need an explanation.  </p>
+			<!--Picture description with a class-->
+			</td>
+
+			<td colspan="2">
+			<p style="color: #14415e; font-size: 13px;" >
+			<!--Related things with a class-->
+			An achievement relating to memes is that I can safely say that if you were to come to my house over break and look at my laptop all you
+			would see is memes (I gurantee it 100%). Another achievement is that now my mum appreciated the values of memes. I cannot tell you how relieved
+			I felt when my mom understood my love of memes. I hope one day everyone over the age of 30 will appreciate this form of modern art and stop
+			yelling at us for wasting our time.
+			</p>
+			</td>
+			</tr>
+
+			<tr>
+			<!--Third row of the table thats not seen on the table since the cell has been splitted-->
+			<td colspan = "2">
+			<!--Related things second box-->
+			<p>I hope one day everyone over the age of 30 will appreciate this form of modern art and stop yelling at us for wasting our time. </p>
+			</td>
+			</tr>
+		  </tr>
+
+		  <tr>
+			<!--Third row of table-->
+			<td rowspan = "2"><p>
+				<h1 id="future"> <em> My Future  </em></h1>
+				<div class="des">
+				<!--Description with a class-->
+				In my free time I like to think about the consequences of my actions in terms of the larger schematics of life.
+				<a href = "RM_MyCities.html#Origin">Favorite Cities</a>			<!-- link to a specific place of the cities page -->
+				In short I question myself whether doing subpar on an examination would prevent me from any opportunites in the future.
+				Basically, to study or not to study? Then I realize that my parents didn't raise a quitter so tis the night before Margia's AP Bio test
+				when young Margia feverously studied to get a good grade on her test because her AP Bio teacher won't give out a flat line curve of a 100.
+				I wish I was kidding.
+				<br>
+				<br>
+				Though most times this does not happen. Some times I wonder about what will happen when I go to college? Will I get
+				into college? What about my mum? How is she going to survive without me? I mean after all she stays up with me how will she survive without me?
+				HOW WILL I SURVIVE WITHOUT MY MUM? What about my sister? Who's going to tell her not to do stupid things? What about father? Who's going to fill
+				out his applications? What about me? Clearly I'm not going to do anything wrong, but I can't cook or clean. Will I go out of state or stay
+				in state?
+				<br>
+				<br>
+				Then it goes to my future. How can I invent something that will make me big? What does the world need? What do I need to do to get to the top?
+				Should I start in stocks then go into business? How will I get the money to start a business? I should release an app... What type of app?
+				Like an amazon app? Gaming app? Business app? Everyday usage app? How can I release this app before college admission process?
+				This is the reason why I can never go to sleep.
+			</td>
+
+			<td rowspan = "2"><img src="./images/success.jpg" alt="A quote." height="325px" width="250px" align="right">
+			<!--Picture description with a class-->
+			<p class="pic"> I need to be successful. It's not even a dream, it's my reality. I'm willing to do whatever it takes (within moral limitations) to get
+			what I want because I don't stop at roadblocks. Either I break them or get around them, there's no in between. I'll spend sleepless nights
+			over an idea, I'll learn new things, and I'll always be motivated whether it's 3 am or 3pm. I remember as a child calling my father at 2 am
+			when I was 7 years old because I had some random idea. As busy as my father would be he would say "You want to do this? Then do it. I'm not
+			going to be here forever, but I'll help you anyway I can". That was the story of how my father helped me create a calculator. </p>
+			</td>
+
+			<td colspan="2"><p style="color:#421C52; font-size: 13px;">
+			<!--Related things with a class-->
+			Something relevant to my future is the clubs I'm taking. I went to a few business type clubs at this school and it was great. But they
+			never thought about market wants or needs. For example, a rising amount of coroporations are trying to mass produce graphene because
+			graphene's versatility allows it to be used in a wide arrange of fields. This makes the inventor of the mass production of graphene
+			a multi-billionaire. Or how about the fact that certain areas have a certain population demographic that makes it better for purchasing
+			real estate or opening a business? Or how about the stock market's voltality but extreme fluidity?
+			</p>
+			</td>
+			</tr>
+
+			<tr>
+			<!--Related things second box-->
+			<!--Fourth row of the table thats not seen on the table since the cell has been splitted-->
+			<td colspan = "2">
+			<p>Everyone always looks at specific successful people who made it big through stocks, but they never see the many others who went broke. It's important to look at the bigger picture before going in because focusing on the specific details can skew up a perception of reality (thank you father for this beautiful advice).  </p>
+			</td>
+			</tr>
+		  </tr>
+
+		  <tr>
+			<!--Fourth row of table-->
+			<td rowspan = "2">
+			<h1 id="meow">  <em> Cats  </em></h1>
+			<div class= "des">
+			<!--Description with a class-->
+				My hobbies include watching cat videos, wishing to have a cat, and obsessing over cats. Yes, cats are better than dogs. First,
+				they are so adorable and they're so elegant. Second they're not as messy as dogs. Dogs poop everywhere and they bark, whereas cats poop in a box
+				and only meow when they want your attention. I can think of many more reasons why cats are better than dogs, but it's going to be an essay so...
+				Since cats are so amazing it's hard not to obsess over these little cuties they play an important role in my life. I mean who can look at a cat and be like "ewwww", it's more like "awwww". Cat videos are also the main reason why my mum gets made at me for wasting my time. BUT THEY'RE SO CUTE.
+				I really can't describe this in words, but here's what I say when I'm watching cat videos.
+				<br>
+				<br>
+				"Awwwww. Push that dog in the pool".
+				<br>
+				<br>
+				"It's so cute. I can squeeze the life out of it".
+				<br>
+				<br>
+				Side note: This is normal. It is human nature to hug things to its death that are cute because they're cute. It's psychology.
+			</div>
+			</td>
+
+			<td rowspan = "2"> 	 <img src="./images/kitty.jpg" alt="Adorable kitten" height="325px" width="250px" align="center">
+			<!--Picture description with a class-->
+			<center>
+			<p class="pic" style="font-size: 11px !Important;">  Look at it's face, it's so cuuuutttttteeeeeeeeee. It's so majestic. I love cats  </p>
+			<center>
+			</td>
+
+			<td colspan = "2">
+			<!--Related things with a class-->
+			<p style="color: #14415e; font-size: 13px;"> I remember I was in my parent's native house and I woke up to a cat sleeping next to me. The things is that I don't have a cat.
+			So I woke my mom up and the first time she didn't say anything. The second time she saw the cat and she hit it with a newspaper and the cat
+			leaped off the bed. This is my first experience with a cat. </p>
+			</td>
+		  </tr>
+
+		  <tr>
+			<td colspan = "2">
+			<!--Related things second box-->
+			<!--Fifth row of the table thats not seen on the table since the cell has been splitted-->
+			<p>My second experience with a cat was when I was walking to the library and I saw this marble cat. I was four at the
+			time and I meowed at the cat. The cat meowed back. A list of words that contain meow is: meow, meowed, meowing, and homeowner.
+			</p>
+			</td>
+			</tr>
+
+
+			<tr>
+			<!--Fifth row of table-->
+			<td rowspan = "2">
+			<h1 id="health">  <em>Health </em> </h1>
+			<div class= "des">
+			<!--Description with a class-->
+			I like to take care of my health because if I don't then my parents scream at me for being do careless. Specifically my father. Most of the
+			time he can't stand seeing me eat sugary foods ie cake, ice cream, etc. If he does, then he gives me a lecture about how I'll be fat.
+			Don't even get me started about buying from food trucks. I honestly can't even buy ice cream from the ice cream trucks or else it's an hour lecture.
+			My mum is more balanced in terms of food. She  says that I can eat sweets in moderation because I'm still a child.
+			<br>
+			<br>
+			On the topic of exercise. Everyone knows I rather be sleeping in rather than running 3 miles every day. But my dad, who worked in the military,
+			is like "Nope. You have to be fit. What's the point of being successful if your health is not tip top?" I agree and I probably sound ungrateful.
+			BUT HEAR ME OUT.The exercise my dad does is intense. First we do yoga. Oh it's just yoga. NO!!!!! It's hell. Yoga burns in places you'll never wish could burn.Then its the cardio. Run a mile. Walk two miles. Run a mile. Walk two miles. Repeat until I feel like you've exercised enough. Next comes the
+			endurance portion. Pushups, weights, and carrying your sister for 1500 meters. Great. Done? Nope. Cycle for 1/2 a mile then swim for 30 minutes.
+			Finally, we'll cool it off with tennis. Ahhhhh... tennis... with my father is pain. For a 50 year old he sure can swing hard.
+			</td>
+
+			<td rowspan = "2"> <img src="./images/athletes.jpg" alt="Me and my sister" height="325px" width="250px" align="right">
+			<!--Picture description with a class-->
+			<p class="pic"> Look at this. This is me and my sister after my dad's exercise routine.</p> </td>
+
+			<td colspan = "2">
+			<!--Related things with a class-->
+			<p style="color: #4c0000; font-size: 13px;"> On a related note. The first time I learned to ride a bike was when my father held me from the back and let me cycle. I went half a mile
+			before realizing my father wasn't there and ran into a bush. No parent should let their child go on the first hour of learning how to ride a bike.
+			It'll traumatize them on the next day. I can speak from experience. </p>
+			</td>
+		  </tr>
+
+		  <tr>
+			<!--Sixth row of the table thats not seen on the table since the cell has been splitted-->
+			<td colspan = "2">
+			<!--Related things second box-->
+			<p>When my father first taught me how to swim. Correction. He pushed me in the 5 feet section
+			and I thought I was going to die. Here's a little trivia piece about me: I'm half an inch from five, so back then I was a little chipmunk. After 5 minutes of thrashing he told me that I could stand on my tippy toes.
+			</p>
+			</td>
+			</tr>
+
+	</body>
+</html>

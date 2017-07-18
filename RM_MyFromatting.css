@@ -1,0 +1,61 @@
+h1{
+	color: LightPink;
+}
+/*formats h1*/
+h2{
+    color: DarkMagenta;
+	font-family:Courier;
+	font-size: 23px;
+}
+/*formats h2*/
+
+h3{
+	color: LightSalmon;
+}
+/*formats h3*/
+
+h4{
+	color: Indigo;
+}
+/*formats h4*/
+
+p {
+    color: DarkSeaGreen;
+	font-family:Verdana;
+	font-size: 15px;
+}
+/*formats p*/
+
+ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		}
+/*formats ul for horizontal navigation bar*/
+
+
+	li {
+		float: left;
+	}
+/*formats li in horizontal navigational bar*/
+
+	li a {
+		display: block;
+		color: red;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+/*formats li a in horizontal navigational bar*/
+
+
+	li a:hover:not(.active) {
+		background-color: #111;
+	}
+
+/*formats ii a not hover horizontal navigational bar*/
